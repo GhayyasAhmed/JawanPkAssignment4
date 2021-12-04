@@ -67,3 +67,24 @@
 #
 # print("Sum of numeric items in dict =", numericSum)
 #
+
+# program 5
+
+lst = ["Ghayyas", "Ahmed", "JawanPk", 7, "Ghayyas", 7, 31, 7, "JawanPk"]
+checked = []
+
+for i in lst:
+    if lst.count(i) > 1:
+        if i not in checked:
+            print(i,"comes",lst.count(i),"times in the list")
+            checked.append(i)
+
+dict3 = {"FirstName": "Ghayyas", "LastName": "Ahmed"}
+newKey = input("Enter a key to insert in the dict: ")
+if newKey not in dict3.keys():
+    newValue = input("Enter value for this key: ")
+    dict3[newKey] = newValue
+    print("Dictionary updated")
+    print(dict3)
+else:
+    print("Key already exists. Enter a unique key")
