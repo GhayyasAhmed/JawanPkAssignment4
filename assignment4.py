@@ -1,34 +1,48 @@
 
 
 # Program 1
-print("Enter what operation you want to perform: ")
-operators = ["+", "-", "*", "/", "**"]
-operator = input("Addition(+), Subtraction(-), Multiplication(*), Division(/), Power(**): ")
+# print("Enter what operation you want to perform: ")
+# operators = ["+", "-", "*", "/", "**"]
+# operator = input("Addition(+), Subtraction(-), Multiplication(*), Division(/), Power(**): ")
+#
+# if operator in operators:
+#     num1 = float(input("Enter number 1: "))
+#
+#     num2 = float(input("Enter number 2: "))
+#
+#     if operator == "+":
+#         res = num1 + num2
+#         print(num1,"+",num2,"=",res)
+#
+#     elif operator == "-":
+#         res = num1 - num2
+#         print(num1,"-",num2,"=",res)
+#
+#     elif operator == "*":
+#         res = num1 * num2
+#         print(num1,"*",num2,"=",res)
+#
+#     elif operator == "/":
+#         res = num1 / num2
+#         print(num1,"/",num2,"=",res)
+#
+#     elif operator == "**":
+#         res = num1 ** num2
+#         print(num1,"**",num2,"=",res)
+#
+# else:
+#     print("Invalid operator")
 
-if operator in operators:
-    num1 = float(input("Enter number 1: "))
 
-    num2 = float(input("Enter number 2: "))
+# Program 2
 
-    if operator == "+":
-        res = num1 + num2
-        print(num1,"+",num2,"=",res)
+lst = ["Ghayyas", "Ahmed", "JawanPk", 22, "Student", 2021]
+flag = True
+for i in lst:
+    if type(i) == int or type(i) == float:
+        print("Yes there is atleast one number in the list")
+        flag = False
+        break
 
-    elif operator == "-":
-        res = num1 - num2
-        print(num1,"-",num2,"=",res)
-
-    elif operator == "*":
-        res = num1 * num2
-        print(num1,"*",num2,"=",res)
-
-    elif operator == "/":
-        res = num1 / num2
-        print(num1,"/",num2,"=",res)
-
-    elif operator == "**":
-        res = num1 ** num2
-        print(num1,"**",num2,"=",res)
-
-else:
-    print("Invalid operator")
+if flag:
+    print("There isn't any number in the list")
