@@ -36,13 +36,34 @@
 
 # Program 2
 
-lst = ["Ghayyas", "Ahmed", "JawanPk", 22, "Student", 2021]
-flag = True
-for i in lst:
-    if type(i) == int or type(i) == float:
-        print("Yes there is atleast one number in the list")
-        flag = False
-        break
+# lst = ["Ghayyas", "Ahmed", "JawanPk", 14, "Student", 2021]
+# flag = True
+# for i in lst:
+#     if type(i) == int or type(i) == float:
+#         print("Yes there is atleast one number in the list")
+#         flag = False
+#         break
+#
+# if flag:
+#     print("There isn't any number in the list")
 
-if flag:
-    print("There isn't any number in the list")
+# Program 3
+
+# dict1 = {"Name":"Ghayyas", "Year": 2021}
+# print(dict1)
+# # Add key age without value using None
+# dict1["Age"] = None
+# print(dict1)
+
+
+# Program 4
+
+# dict2 = {"Name": "Ghayyas", 1: 1, 2:2, 3:3}
+# numericSum = 0
+# for i in dict2.items():
+#     for j in i:
+#         if type(j) == int or type(j) == float:
+#             numericSum += j
+#
+# print("Sum of numeric items in dict =", numericSum)
+#
